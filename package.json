@@ -1,9 +1,14 @@
 {
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
+    "tailwindcss": "^4.0.12"
+  },
   "name": "rjtech",
   "version": "1.0.0",
   "main": "script.js",
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,9 +21,5 @@
     "url": "https://github.com/RJ-Husnain/rjtech/issues"
   },
   "homepage": "https://github.com/RJ-Husnain/rjtech#readme",
-  "description": "",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.11",
-    "tailwindcss": "^4.0.11"
-  }
+  "description": ""
 }
