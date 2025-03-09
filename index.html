@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="bg-slate-700">
+    <div class="relative">
     <!-- Navbar Goes Here -->
      <nav class="bg-slate-900 text-white ">
         <div class="flex items-center justify-between flex-row px-8 h-12">
@@ -15,26 +16,26 @@
             <!-- Navigation bar -->
             <div>
                 <ul class="list-none flex items-center justify-center flex-row gap-12 text-[16px] ">
-                    <li class="hover:text-[#00E5FF] cursor-pointer"><a href="index.html">Home</a></li>
+                    <li class=" hover:text-[#00E5FF] cursor-pointer"><a href="index.html">Home</a></li>
                     <li class="hover:text-[#00E5FF] cursor-pointer" id="tools"><a href="#">Tools</a></li>
                     <!-- Tools list -->
-                    <div id="toolsBox" class="hidden flex-col  bg-gray-800 absolute top-5 border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                    <div id="toolsBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[750px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
                         <ul class="flex flex-col list-none">
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm">Calculator</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900">CHATGPT</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900">Spotify</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 ">Virtual Assistant</li>
-                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm">Virtual Math Teacher</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Calculator</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">CHATGPT</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Spotify</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Virtual Assistant</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer ">Virtual Math Teacher</li>
                         </ul>
                      </div>
                     <li id="services" class="hover:text-[#00E5FF] cursor-pointer"><a href="#">Services</a></li>
                     <!-- Services list -->
-                    <div id="servicesBox" class="hidden flex-col  bg-gray-800 absolute top-5 right-12 border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                    <div id="servicesBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[660px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
                         <ul class="flex flex-col list-none">
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm">Graphic Designing</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900">Video Editing</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900">Web Development</li>
-                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm">Youtuber</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm hover:text-[#00E5ff] cursor-pointer ">Graphic Designing</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Video Editing</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Web Development</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer">Youtuber</li>
                         </ul>
                      </div>
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="about.html">About us</a></li>
@@ -48,9 +49,10 @@
             </div>
         </div>
      </nav>
-     <div class="">
+     <div class="text-2xl bg-amber-700">
         Home Section
      </div>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>

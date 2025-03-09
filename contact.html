@@ -16,18 +16,27 @@
             <div>
                 <ul class="list-none flex items-center justify-center flex-row gap-12 text-[16px] ">
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="index.html">Home</a></li>
-                    <li class="hover:text-[#00E5FF] cursor-pointer"><a href="">Tools</a></li>
+                    <li class="hover:text-[#00E5FF] cursor-pointer" id="tools"><a href="#">Tools</a></li>
                     <!-- Tools list -->
-                    <div>
-                        <ul>
-                            <li>Calculator</li>
-                            <li>CHATGPT</li>
-                            <li>Spotify</li>
-                            <li>Virtual Assistant</li>
-                            <li>Virtual Math Teacher</li>
+                    <div id="toolsBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[750px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                        <ul class="flex flex-col list-none">
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Calculator</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">CHATGPT</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Spotify</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Virtual Assistant</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer ">Virtual Math Teacher</li>
                         </ul>
                      </div>
-                    <li class="hover:text-[#00E5FF] cursor-pointer"><a href="">Services</a></li>
+                    <li id="services" class="hover:text-[#00E5FF] cursor-pointer"><a href="#">Services</a></li>
+                    <!-- Services list -->
+                    <div id="servicesBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[660px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                        <ul class="flex flex-col list-none">
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm hover:text-[#00E5ff] cursor-pointer ">Graphic Designing</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Video Editing</li>
+                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Web Development</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer">Youtuber</li>
+                        </ul>
+                     </div>
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="about.html">About us</a></li>
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="contact.html">Contact us</a></li>
                 </ul>
@@ -39,9 +48,9 @@
             </div>
         </div>
      </nav>
-     <div>
+     <div class="text-2xl bg-amber-700">
         Contact Section
      </div>
-
+<script src="script.js"></script>
 </body>
 </html>
