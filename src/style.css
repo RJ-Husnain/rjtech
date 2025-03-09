@@ -1,0 +1,60 @@
+.typing-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.typing-text span {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+.typing-text span::before {
+    content: "software Developer.";
+    color: #00e5ff;
+    animation: words 10s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 80%;
+    border-left: 3px solid rgb(29, 29, 29);
+    right: -8;
+    bottom:0 ; 
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #00e5ff;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Web Developer";
+    }
+
+    21%,
+    40% {
+        content: "Youtuber";
+    }
+
+    41%,
+    60% {
+        content: "Graphic Designer";
+    }
+
+    61%,
+    80% {
+        content: "Web Designer";
+    }
+
+    81%,
+    100% {
+        content: "Freelancer";
+    }
+}
