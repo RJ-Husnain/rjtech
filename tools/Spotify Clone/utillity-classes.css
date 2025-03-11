@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;    
+}
+.align-center{
+    align-items: center;
+}
+.border{
+    border: 2px solid red;
+    margin: 5px;
+}
+.in-filter{
+   filter: invert();
+}
+.round{
+    border-radius: 10px;
+
+}
+.p-1{
+    padding: 11px 18px;
+}
+.b-gcolor{
+    background-color: #121212;
+}
+.m-1{
+    margin: 3px;
+}
+
+/* Dark Scroll Bar */
+/* For WebKit Browsers (e.g., Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Dark background for the track */
+    border-radius: 6px; /* Optional: Round corners */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4a4a4a; /* Darker color for the thumb */
+    border-radius: 6px; /* Optional: Round corners */
+    border: 3px solid #1e1e1e; /* Matches the track for a gap effect */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #616161; /* Slightly lighter color on hover */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: #4a4a4a #1e1e1e; /* Thumb color and track color */
+  }
+  
+  /* Optional: For Internet Explorer and Edge (Legacy) */
+  body {
+    -ms-overflow-style: scrollbar; /* Default scrollbar style for IE */
+  }
+  

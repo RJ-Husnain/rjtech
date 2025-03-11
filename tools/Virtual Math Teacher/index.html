@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Math teacher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Hi, I'm <span id="virtual">Virtual Math Teacher</span></h1>
+        <h1>Created by <span id="rj">R.J</span></h1>
+    </div>
+    <div class="upload-img">
+        <div id="upld-box">
+            <input id="input" type="file" hidden>
+            <img src="" alt="" id="img">
+            <img src="icon.svg" alt="Icon" id="icon">
+            <span>Upload Image</span>
+        </div>
+        <button id="btn">Answer</button>
+    </div>
+    <img src="loading.gif" alt="loading" id="loading" width="60px">
+    <div class="output">
+        <h3>Solution</h3>
+        <pre id="text">
+            
+        </pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

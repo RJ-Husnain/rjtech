@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" class="display" id="display" placeholder="0">
+        </div>
+        <div class="buttons">
+            <div class="row" id="row1">
+                <button onclick="document.querySelector('#display').value=''">AC</button>
+                <button onclick="document.querySelector('#display').value=document.querySelector('#display').value.toString().slice(0,-1)">DE</button>
+                <button onclick="updateDisplay('.')">.</button>
+                <button onclick="sqrf()">&radic;</button>
+            </div>
+            <div class="row">
+                <button onclick="sinf()">Sin</button>
+                <button onclick="cosf()">Cos</button>
+                <button onclick="tanf()">Tan</button>
+                <button onclick="updateDisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button onclick="updateDisplay('9')">9</button>
+                <button onclick="updateDisplay('8')">8</button>
+                <button onclick="updateDisplay('7')">7</button>
+                <button onclick="updateDisplay('*')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="updateDisplay('6')">6</button>
+                <button onclick="updateDisplay('5')">5</button>
+                <button onclick="updateDisplay('4')">4</button>
+                <button onclick="updateDisplay('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="updateDisplay('3')">3</button>
+                <button onclick="updateDisplay('2')">2</button>
+                <button onclick="updateDisplay('1')">1</button>
+
+
+                
+                <button onclick="updateDisplay('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="updateDisplay('0')">0</button>
+                <button onclick="updateDisplay('00')">00</button>
+                <button onclick="document.querySelector('#display').value=eval(document.querySelector('#display').value)" id="equal">=</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="srcipt.js"></script>
+</body>
+</html>

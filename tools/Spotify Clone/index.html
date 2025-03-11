@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="utillity-classes.css">
+</head>
+
+<body>
+    <!-- <img src="logo.svg" alt=""> -->
+
+    <!-- Two Section -->
+    <div class="container flex">
+        <div class="left">
+            <div class="close">
+                <img class="in-filter" src="/svg/close.svg" alt="">
+            </div>
+            <div class="home round p-1 b-gcolor ">
+                <img src="/svg/logo.svg" alt="Spotify logo" class="in-filter">
+                <ul>
+                    <li><img src="/svg/home.svg" alt="home" class="in-filter">Home</li>
+                    <li><img src="/svg/search.svg" alt="search" class="in-filter">Search</li>
+                </ul>
+            </div>
+            <div class="library round b-gcolor flex">
+                <div class="lbheading">
+                    <div class="icon">
+                        <img src="/svg/library.svg" class="in-filter" alt="library">
+                        <h3>Your library</h3>
+                    </div>
+                    <div class="plus">
+                        <img src="/svg/plus.svg" class="in-filter" alt="plus">
+                    </div>
+                </div>
+                <div class="lblist">
+                    <ul class="songul">
+                        <!-- <li>
+                            <div class="micon">
+                            <img class="in-filter" src="/svg/music.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Song Name</p>
+                                <p>Artitst name</p>
+                            </div>
+                            <div class="lbplay flex">
+                            <span>Play Now</span>
+                            <img class="in-filter" src="/svg/lbplay.svg" alt="">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- link -->
+                <div class="footer">
+                    <a href="">Legal</a>
+                    <a href="">Safety &
+                        Privacy Center</a>
+                    <a href="">Privacy
+                        Policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">About
+                        Ads</a>
+                    <a href="">Accessibility</a>
+                </div>
+                <div class="lan-btn">
+                    <button>
+                        <img src="/svg/lan.svg" class="in-filter" alt="">
+                        <p>English</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <div class="icons">
+                    <div>
+                        <img  class="in-filter" src="/svg/hamburger.svg" alt="" id="hamburger">
+                    </div>
+                    <div>
+                    <img src="/svg/pre.svg" class="in-filter i" alt="">
+                    <img src="/svg/nex.svg" class="in-filter i" alt="">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="btn-1">Sign up</button>
+                    <button class="btn-2">Log in</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playhead">
+                    <h2>Spotify Playlist</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="cardcontainer">     </div>
+                <div class="playbar">
+                    <div class="playinfo">
+                        <div class="songinfo"></div>
+                        <div class="songicons">
+                            <img class="in-filter" id="previous" src="/svg/previous.svg" alt="">
+                            <img class="in-filter" id="play" src="/svg/play.svg" alt="">
+                            <img class="in-filter" id="next" src="/svg/next.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="time">
+                                    <img class="in-filter" id="volumeMute" src="volume.svg" alt="" width="22px">
+                                <input type="range" name="volume" id="volume">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

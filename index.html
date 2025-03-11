@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-slate-700">
-    <div class="relative">
+
+<body class="bg-[#1e293b] w-[100vw]">
     <!-- Navbar Goes Here -->
-     <nav class="bg-slate-900 text-white ">
+    <nav class="bg-[#0000004a] text-[#f8fafc] absolute top-0 w-[100vw]">
         <div class="flex items-center justify-between flex-row px-8 h-12">
             <!-- logo -->
             <div><a href="index.html"><img src="logo.png" alt="" class="w-20 cursor-pointer"></a></div>
             <!-- Navigation bar -->
             <div>
-                <ul class="list-none flex items-center justify-center flex-row gap-12 text-[16px] ">
-                    <li class=" hover:text-[#00E5FF] cursor-pointer"><a href="index.html">Home</a></li>
+                <ul class="list-none flex items-center justify-center flex-row gap-12 text-[17px] font-semibold ">
+                    <li class="hover:text-[#00E5FF] cursor-pointer"><a href="index.html">Home</a></li>
                     <li class="hover:text-[#00E5FF] cursor-pointer" id="tools"><a href="#">Tools</a></li>
                     <!-- Tools list -->
-                    <div id="toolsBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[750px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                    <div id="toolsBox"
+                        class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[750px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
                         <ul class="flex flex-col list-none">
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Calculator</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">CHATGPT</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Spotify</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">Virtual Assistant</li>
-                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer ">Virtual Math Teacher</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">
+                                Calculator</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">
+                                CHATGPT</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">
+                                Spotify</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] rounded-t-sm cursor-pointer">
+                                Virtual Assistant</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer ">
+                                Virtual Math Teacher</li>
                         </ul>
-                     </div>
+                    </div>
                     <li id="services" class="hover:text-[#00E5FF] cursor-pointer"><a href="#">Services</a></li>
                     <!-- Services list -->
-                    <div id="servicesBox" class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[660px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
+                    <div id="servicesBox"
+                        class="hidden flex-col  bg-gray-800 absolute top-[30px] right-[660px] border-1 border-gray-500 rounded-sm  transition duration-100 ease-in-out">
                         <ul class="flex flex-col list-none">
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm hover:text-[#00E5ff] cursor-pointer ">Graphic Designing</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Video Editing</li>
-                            <li class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">Web Development</li>
-                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer">Youtuber</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 rounded-t-sm hover:text-[#00E5ff] cursor-pointer ">
+                                Graphic Designing</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">
+                                Video Editing</li>
+                            <li
+                                class="border-b-1 border-gray-500 px-6 py-2 hover:bg-gray-900 hover:text-[#00E5ff] cursor-pointer">
+                                Web Development</li>
+                            <li class=" px-6 py-2 hover:bg-gray-900 rounded-b-sm hover:text-[#00E5ff] cursor-pointer">
+                                Youtuber</li>
                         </ul>
-                     </div>
+                    </div>
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="about.html">About us</a></li>
                     <li class="hover:text-[#00E5FF] cursor-pointer"><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
             <!-- Buttons -->
             <div class="flex gap-3">
-                <button class="border-2 border-[#00E5FF] text-[#00E5ff] hover:bg-[#00E5FF] px-3 py-0.5 rounded-[16px] hover:text-slate-900 font-medium transition duration-700 ease-in-out cursor-pointer">Login</button>
-                <button class="bg-[#FFD700] hover:bg-[#e7ba25] px-3 py-0.5 rounded-[16px] text-slate-900 font-medium transition duration-100 ease-in-out cursor-pointer">Signup</button>
+                <button
+                    class="border-2 border-[#00E5FF] text-[#00E5ff] hover:bg-[#00E5FF] px-3 py-0.5 rounded-[16px] hover:text-slate-900 font-medium transition duration-700 ease-in-out cursor-pointer">Login</button>
+                <button
+                    class="bg-[#FFD700] hover:bg-[#e7ba25] px-3 py-0.5 rounded-[16px] text-slate-900 font-medium transition duration-100 ease-in-out cursor-pointer">Signup</button>
             </div>
         </div>
-     </nav>
-     <div class="text-2xl bg-amber-700">
-        Home Section
-     </div>
+    </nav>
+    <!-- Header -->
+    <div class="flex items-center justify-start text-2xl  overflow-x-clip bg-[url('/header.jpg')] bg-cover bg-center bg-no-repeat w-full h-[80vh]">
+        <!-- <img src="header.jpg" alt="" class="h-[80vh] w-[100vw]"> -->
+         <div class="mx-[80px]">
+        <h2 class="text-white text-[30px] font-bold text-base/2 ">Welcome to </h2>
+        <!-- <h2 class="text-white text-6xl font-bold">Welcome to <span class="text-[#e7ba25] text-7xl font-black"> R.J Tech</span></h2> -->
+        <h2  class="text-[#e7ba25] text-8xl font-black">R.J Tech</h2>
+        <h2 class="text-[#a4a2a2] text-[18px] text-base/4">Empowering World with Tech</h2>
     </div>
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
